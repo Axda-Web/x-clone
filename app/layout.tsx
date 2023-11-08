@@ -5,6 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/src/theme/ThemeProvider";
 import clsx from "clsx";
 import Header from "@/src/feature/layout/Header";
+import Footer from "@/src/feature/layout/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
             <div className="flex-1 max-w-lg m-auto py-12 w-full">
               {children}
             </div>
+            <Footer />
           </div>
         </ThemeProvider>
       </body>
