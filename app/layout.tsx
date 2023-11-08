@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { ThemeProvider } from "@/src/theme/ThemeProvider";
 import clsx from "clsx";
+import Header from "@/src/feature/layout/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={clsx(inter.className, "bg-background")}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex flex-col h-full">
+            <Header />
             <div className="flex-1 max-w-lg m-auto py-12 w-full">
               {children}
             </div>
