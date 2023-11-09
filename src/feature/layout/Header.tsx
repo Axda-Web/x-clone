@@ -1,6 +1,7 @@
 import ThemeToggle from "@/src/theme/ThemeToggle";
 import clsx from "clsx";
 import { RiTwitterXFill } from "react-icons/ri";
+import LoginButton from "./auth/LoginButton";
 const Header = () => {
   return (
     <header className="border-b border-b-accent">
@@ -10,6 +11,7 @@ const Header = () => {
             className={clsx("text-foreground", "dark:text-foreground")}
           />
         </h2>
+        <LoginButton />
         <ThemeToggle />
       </div>
     </header>
