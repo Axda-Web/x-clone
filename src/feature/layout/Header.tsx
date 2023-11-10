@@ -4,12 +4,11 @@ import { RiTwitterXFill } from "react-icons/ri";
 import LoginButton from "./auth/LoginButton";
 import { getAuthSession } from "@/lib/auth";
 import UserProfile from "./auth/UserProfile";
-import { User } from "lucide-react";
 
 const Header = async () => {
   const session = await getAuthSession();
   return (
-    <header className="border-b border-b-accent fixed top-0 w-full bg-background">
+    <header className="border-b border-b-accent fixed top-0 w-full bg-background z-20">
       <div className="container flex items-center py-2 max-w-lg m-auto gap-1">
         <h2 className="text-2xl font-bold mr-auto">
           <RiTwitterXFill
